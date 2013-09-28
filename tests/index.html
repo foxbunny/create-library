@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Tests</title>
+        <link rel="stylesheet" href="../tools/mocha.css" />
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script src="../tools/mocha.js"></script>
+        <script src="../tools/chai.js"></script>
+        <script src="../tztime.js"></script>
+        <script>
+            mocha.setup('bdd');
+        </script>
+        <!--tests-->
+        <script src="test_main.js"></script>
+        <!--/tests-->
+        <script>
+            mocha.checkLeaks();
+            mocha.run();
+        </script>
+    </body>
+</html>
+
